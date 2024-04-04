@@ -11,7 +11,7 @@ START_COLOR = "green"
 END_COLOR = "red"
 
 class MazeApp:
-    def _init_(self, master):
+    def __init__(self, master):
         self.master = master
         self.master.title("Maze Game")
         self.canvas = tk.Canvas(master, width=CELL_SIZE * MAZE_WIDTH, height=CELL_SIZE * MAZE_HEIGHT)
